@@ -1,0 +1,9 @@
+{
+  "name": "hmis-automerge-bench-client",
+  "private": true,
+  "type": "module",
+  "description": "Simulated Angular offline device for the Automerge sync benchmark",
+  "dependencies": {
+    "@automerge/automerge": "3.5.0"
+  }
+}

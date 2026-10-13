@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "https://offline-hmis.vercel.app",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

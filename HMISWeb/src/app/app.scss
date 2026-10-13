@@ -1,0 +1,68 @@
+/* Bottom tab bar from home_shell.dart; becomes a side rail on wide screens. */
+:host { display: block; min-height: 100dvh; }
+
+main { padding-bottom: var(--tabs-height); }
+
+.tabs {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 15;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: var(--tabs-height);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--surface);
+  border-top: 1px solid var(--divider);
+}
+.brand { display: none; }
+.tabs a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 15px;
+  text-decoration: none;
+  &:hover { background: var(--bg); }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--nav-idle); }
+  &.active { color: var(--ink); font-weight: 700; }
+  &.active .dot { background: var(--teal); }
+}
+
+@media (min-width: 900px) {
+  :host { display: grid; grid-template-columns: 220px 1fr; }
+  main { padding-bottom: 0; min-width: 0; }
+  .tabs {
+    position: sticky;
+    top: 0;
+    inset: auto;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 12px;
+    border-top: 0;
+    border-right: 1px solid var(--divider);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    height: var(--bar-height);
+    padding: 0 12px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--teal);
+  }
+  .tabs a {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14px;
+    min-height: 52px;
+    padding: 0 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    &.active { background: var(--teal-soft); }
+  }
+}

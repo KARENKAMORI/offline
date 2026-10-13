@@ -1,0 +1,192 @@
+{
+  "history": [
+    {
+      "visits": 0,
+      "statusEdits": 0,
+      "docBytes": 279,
+      "jsonBytes": 187,
+      "overhead": 1.49,
+      "loadMs": 0.013417999980447348,
+      "loadSaveMs": 0.017363000097248005,
+      "extractMs": 0.01762100009727874,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 341,
+        "bytesDown": 153,
+        "serverMs": 0.04840100018554949
+      }
+    },
+    {
+      "visits": 10,
+      "statusEdits": 0,
+      "docBytes": 683,
+      "jsonBytes": 1304,
+      "overhead": 0.52,
+      "loadMs": 0.062352999975701096,
+      "loadSaveMs": 0.2681940000002214,
+      "extractMs": 0.10375600004408625,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 352,
+        "bytesDown": 165,
+        "serverMs": 0.5395189996306726
+      }
+    },
+    {
+      "visits": 100,
+      "statusEdits": 0,
+      "docBytes": 3044,
+      "jsonBytes": 11355,
+      "overhead": 0.27,
+      "loadMs": 0.41476600017631426,
+      "loadSaveMs": 0.8015359999262728,
+      "extractMs": 0.6676160001006792,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 469,
+        "bytesDown": 279,
+        "serverMs": 1.6134330003296782
+      }
+    },
+    {
+      "visits": 500,
+      "statusEdits": 0,
+      "docBytes": 13721,
+      "jsonBytes": 56030,
+      "overhead": 0.24,
+      "loadMs": 2.046353999958228,
+      "loadSaveMs": 3.1507329999840294,
+      "extractMs": 3.3078300002671313,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 969,
+        "bytesDown": 780,
+        "serverMs": 6.0582300002351985
+      }
+    },
+    {
+      "visits": 10,
+      "statusEdits": 100,
+      "docBytes": 787,
+      "jsonBytes": 1303,
+      "overhead": 0.6,
+      "loadMs": 0.16946200003076228,
+      "loadSaveMs": 0.2320989997315337,
+      "extractMs": 0.19836100000247825,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 418,
+        "bytesDown": 230,
+        "serverMs": 0.5125860002408444
+      }
+    },
+    {
+      "visits": 10,
+      "statusEdits": 1000,
+      "docBytes": 734,
+      "jsonBytes": 1306,
+      "overhead": 0.56,
+      "loadMs": 1.1454329996922752,
+      "loadSaveMs": 1.384687000154372,
+      "extractMs": 1.1974089998147974,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 984,
+        "bytesDown": 793,
+        "serverMs": 2.8782320000573236
+      }
+    },
+    {
+      "visits": 10,
+      "statusEdits": 10000,
+      "docBytes": 838,
+      "jsonBytes": 1302,
+      "overhead": 0.64,
+      "loadMs": 12.15432500021052,
+      "loadSaveMs": 12.66290499961542,
+      "extractMs": 12.13903300003949,
+      "syncOneVisit": {
+        "rounds": 2,
+        "bytesUp": 6578,
+        "bytesDown": 6388,
+        "serverMs": 27.85845700009304
+      }
+    }
+  ],
+  "granularity": [
+    {
+      "patients": 1000,
+      "changedPatients": 10,
+      "perPatient": {
+        "totalDocBytes": 597541,
+        "sync": {
+          "rounds": 2,
+          "bytesUp": 3408,
+          "bytesDown": 1530,
+          "serverMs": 0.8768650004640222,
+          "totalMs": 1.3859099999535829
+        },
+        "coldStart": {
+          "bytesUp": 81000,
+          "bytesDown": 720541,
+          "ms": 82.38011000003098,
+          "snapshotBytes": 597541
+        }
+      },
+      "facility": {
+        "docBytes": 114503,
+        "loadMs": 13.678085999799805,
+        "sync": {
+          "rounds": 2,
+          "bytesUp": 3600,
+          "bytesDown": 1405,
+          "serverMs": 55.119667000326444,
+          "totalMs": 56.28317099990454
+        },
+        "coldStart": {
+          "bytesUp": 81,
+          "bytesDown": 115879,
+          "ms": 83.6533460001192,
+          "snapshotBytes": 114503
+        }
+      }
+    },
+    {
+      "patients": 5000,
+      "changedPatients": 10,
+      "perPatient": {
+        "totalDocBytes": 2992340,
+        "sync": {
+          "rounds": 2,
+          "bytesUp": 3406,
+          "bytesDown": 1530,
+          "serverMs": 0.8813959998406062,
+          "totalMs": 1.477543999953923
+        },
+        "coldStart": {
+          "bytesUp": 405000,
+          "bytesDown": 3607340,
+          "ms": 415.4248859999825,
+          "snapshotBytes": 2992340
+        }
+      },
+      "facility": {
+        "docBytes": 548319,
+        "loadMs": 81.44670199999382,
+        "sync": {
+          "rounds": 2,
+          "bytesUp": 8601,
+          "bytesDown": 6405,
+          "serverMs": 265.2729870001167,
+          "totalMs": 272.69606599975305
+        },
+        "coldStart": {
+          "bytesUp": 81,
+          "bytesDown": 554695,
+          "ms": 423.0879130000176,
+          "snapshotBytes": 548319
+        }
+      }
+    }
+  ]
+}
